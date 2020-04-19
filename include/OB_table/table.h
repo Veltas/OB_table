@@ -1,7 +1,7 @@
 #ifndef VV_OB_TABLE_INCLUDED
 #define VV_OB_TABLE_INCLUDED
 
-#include "util.h"
+#include <OB_table/util.h>
 
 #include <stddef.h>
 #include <stdbool.h>

@@ -1,5 +1,5 @@
 CC=cc
-CFLAGS=-std=c11 -Wall -W -pedantic -O3
+CFLAGS=-std=c11 -Wall -W -pedantic -O3 -I ../include
 LD=$(CC)
 
 TESTS = OB_table_test
@@ -16,7 +16,7 @@ tests: $(TESTS) $(FTESTS)
 	done
 	@echo "=== All tests PASSED ==="
 
-OB_table_test: ../OB_table.c ../hash.c OB_table_test.c
+OB_table_test: ../source/table.c ../source/hash.c OB_table_test.c
 	$(LD) $(CFLAGS) -o $@ $^
 
 .PHONY: clean

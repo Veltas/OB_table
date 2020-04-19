@@ -1,7 +1,7 @@
 #ifndef VV_ASSERT_INCLUDED
 #define VV_ASSERT_INCLUDED
 
-#include "util.h"
+#include <OB_table/util.h>
 #include <stdio.h>
 #include <stdlib.h>
 
