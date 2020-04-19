@@ -63,7 +63,7 @@ OB_table_insert_loc(struct OB_table *t, void *el)
 		if (EXPAND_RATIO * (t->n + 1) > t->cap) {
 			tc = *t;
 			tc.n = 0;
-			OB_table_init(&tc, EXPAND_RATIO * (t->n + 1));
+			OB_table_init(&tc, MAX(EXPAND_RATIO, 2) * (t->n + 1));
 			for (size_t i = 0; i < t->cap; i++) {
 				if (t->table[i] && t->table[i] != deleted)
 					OB_table_insert_loc(&tc, t->table[i]);
