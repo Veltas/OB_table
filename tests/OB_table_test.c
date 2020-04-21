@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "../OB_table.h"
-#include "../hash.h"
-#include "../util.h"
-#include "../assert.h"
+#include <OB_table/table.h>
+#include <OB_table/hash.h>
+#include <OB_table/util.h>
+#include <OB_table/assert.h>
 
 static bool comp(union param p, const void *s1, const void *s2)
 {

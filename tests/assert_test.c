@@ -1,4 +1,4 @@
-#include "../assert.h"
+#include <OB_table/assert.h>
 
 int main(void)
 {
